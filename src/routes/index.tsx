@@ -148,25 +148,27 @@ function Index() {
                 className="animate-float-slow absolute inset-6 rounded-full opacity-40 blur-3xl"
                 style={{ background: "var(--gradient-primary)" }}
               />
-              <img
-                src={portrait.url}
-                alt="Lindah S. Siyendi in graduation regalia"
-                className="relative w-full select-none object-cover mix-blend-luminosity contrast-110 saturate-0"
-                style={{
-                  maskImage:
-                    "radial-gradient(70% 65% at 50% 42%, #000 55%, transparent 100%), linear-gradient(to bottom, #000 60%, transparent 96%)",
-                  maskComposite: "intersect",
-                  WebkitMaskComposite: "source-in",
-                  WebkitMaskImage:
-                    "radial-gradient(70% 65% at 50% 42%, #000 55%, transparent 100%), linear-gradient(to bottom, #000 60%, transparent 96%)",
-                }}
-              />
-              <div
-                className="pointer-events-none absolute inset-0 opacity-40 mix-blend-color"
-                style={{ background: "var(--gradient-primary)" }}
-              />
+              <div className="portrait-mask relative">
+                <img
+                  src={portrait.url}
+                  alt="Lindah S. Siyendi in graduation regalia"
+                  className="w-full select-none object-cover contrast-110 saturate-[0.25]"
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 opacity-45 mix-blend-color"
+                  style={{ background: "var(--gradient-primary)" }}
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 mix-blend-multiply"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom, transparent 45%, oklch(0.13 0.018 300) 100%)",
+                  }}
+                />
+              </div>
             </div>
           </Reveal>
+
         </section>
 
         {/* ABOUT */}
