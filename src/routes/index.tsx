@@ -148,24 +148,24 @@ function Index() {
                 className="animate-float-slow absolute inset-6 rounded-full opacity-40 blur-3xl"
                 style={{ background: "var(--gradient-primary)" }}
               />
-              <div className="portrait-mask relative">
+              <div
+                className="portrait-mask relative"
+                style={{ background: "var(--gradient-primary)" }}
+              >
                 <img
                   src={portrait.url}
                   alt="Lindah S. Siyendi in graduation regalia"
-                  className="w-full select-none object-cover contrast-110 saturate-[0.25]"
+                  className="w-full select-none object-cover mix-blend-multiply contrast-110 grayscale"
                 />
                 <div
-                  className="pointer-events-none absolute inset-0 opacity-45 mix-blend-color"
-                  style={{ background: "var(--gradient-primary)" }}
-                />
-                <div
-                  className="pointer-events-none absolute inset-0 mix-blend-multiply"
+                  className="pointer-events-none absolute inset-0"
                   style={{
                     background:
-                      "linear-gradient(to bottom, transparent 45%, oklch(0.13 0.018 300) 100%)",
+                      "linear-gradient(to bottom, transparent 40%, oklch(0.13 0.018 300) 100%)",
                   }}
                 />
               </div>
+
             </div>
           </Reveal>
 
