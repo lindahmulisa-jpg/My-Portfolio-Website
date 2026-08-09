@@ -156,6 +156,7 @@ function Index() {
                   maskImage:
                     "radial-gradient(70% 65% at 50% 42%, #000 55%, transparent 100%), linear-gradient(to bottom, #000 60%, transparent 96%)",
                   maskComposite: "intersect",
+                  WebkitMaskComposite: "source-in",
                   WebkitMaskImage:
                     "radial-gradient(70% 65% at 50% 42%, #000 55%, transparent 100%), linear-gradient(to bottom, #000 60%, transparent 96%)",
                 }}
