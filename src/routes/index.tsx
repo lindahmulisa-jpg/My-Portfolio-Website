@@ -9,7 +9,7 @@ import {
   Languages,
   ArrowUpRight,
 } from "lucide-react";
-import portrait from "@/assets/lindah-portrait.jpg.asset.json";
+import portrait from "@/assets/image-1.jpeg";
 import { Navbar } from "@/components/Navbar";
 import { Reveal } from "@/components/Reveal";
 
@@ -153,7 +153,7 @@ function Index() {
                 style={{ background: "var(--gradient-primary)" }}
               >
                 <img
-                  src={portrait.url}
+                  src={portrait}
                   alt="Lindah S. Siyendi in graduation regalia"
                   className="w-full select-none object-cover mix-blend-multiply contrast-110 grayscale"
                 />
